@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Box, Grid } from '@mui/material';
-import { InfoData } from '../../../data/InfoData';
+// import { InfoData } from '../../../data/NewsData';
 import Card from './Card';
 
 
@@ -50,7 +50,7 @@ const Tabs = () => {
     setValue(newValue);
   };
 
-  const GroupNews = InfoData.find(e => e.id === value)
+  // const GroupNews = InfoData.find(e => e.id === value)
 
   console.log('GroupNews', GroupNews)
   // const handleChangeIndex = (index) => {
@@ -79,11 +79,11 @@ const Tabs = () => {
           justifyContent="center"
           alignItems="center"
         >
-          {GroupNews.subcontent.map(e =>
+          {/* {GroupNews.subcontent.map(e =>
             <Grid item key={e.subid}>
               <Card description={e.Description} PathImg={e.imagePath} time={e.time} />
             </Grid>
-          )}
+          )} */}
         </Grid>
       </TabPanel>
 

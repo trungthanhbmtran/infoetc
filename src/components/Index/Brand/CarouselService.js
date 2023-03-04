@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
-import { BrandData } from '../../../../data/Branddata';
+import { BrandData } from '../../../../data/BrandData';
 
 const CarouselService = ( ) => {
     // console.log('data',data)
